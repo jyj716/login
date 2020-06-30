@@ -1,0 +1,17 @@
+<%- include('_header.ejs') -%>
+<form method="POST" action="/signup">
+    <div class="form-group">
+        <label for="inputname">User name</label>
+        <input type="text" class="form-control" name="username" id="inputname" placeholder="Enter Username">
+      </div>
+    <div class="form-group">
+      <label for="inputemail">Email address</label>
+      <input type="email" class="form-control" name="email" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="inputpassword">Password</label>
+      <input type="password" class="form-control" name="passwordHash" id="inputpassword" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+<%- include('_footer.ejs') -%>
